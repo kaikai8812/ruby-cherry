@@ -1,24 +1,24 @@
-# puts 'abc'.class
+puts 'abc'.class
 
-# puts %Q!おはようございます。!
-# puts %Q{おはようございます。}
-# puts %!おはようございます。!
+puts %Q!おはようございます。!
+puts %Q{おはようございます。}
+puts %!おはようございます。!
 
-# puts "line1,line2"
+puts "line1,line2"
 
-# puts "line1,
+puts "line1,
 
-# line2"
+line2"
 
-# name = "かいかい"
+name = "かいかい"
 
-# a = <<-TEXT
-# はじめまして
-# 青山です
-# #{name}です
-#        TEXT
+a = <<-TEXT
+はじめまして
+青山です
+#{name}です
+       TEXT
 
-# puts a
+puts a
 
 name1 = "aoyama"
 name2 = "kaikai"
