@@ -24,10 +24,13 @@
 
 # !で終わるメソッド
 
-a = "abcde"
+# a = "abcde"
 
-puts a.upcase #この場合は、aの中身自体は変わらない。
-puts a
+# puts a.upcase #この場合は、aの中身自体は変わらない。
+# puts a
 
-puts a.upcase! # !をつけると、aの中身までもが変わってしまう。
-puts a
+# puts a.upcase! # !をつけると、aの中身までもが変わってしまう。
+# puts a
+
+require 'date'
+puts Date.today
