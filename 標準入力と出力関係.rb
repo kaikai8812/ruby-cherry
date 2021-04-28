@@ -89,5 +89,5 @@ input = "80,50,20 86,54,23 67,33,44"
 
 # puts integer_array.map{|scores| scores.max}
 
-puts input.split(" ").map{|scores| scores.split(",")}.map{|scores| scores.map{|score| score.to_i}}.map{|scores| scores.max}
+# puts input.split(" ").map{|scores| scores.split(",")}.map{|scores| scores.map{|score| score.to_i}}.map{|scores| scores.max}
 
