@@ -5,17 +5,17 @@ class User
     @name = name
   end
 
-  def name
-    @name
-  end
-
-  def name=(value)
-    @name = value
+  def self.create(names)
+    names.map do |name|   #受け取った配列を、Userクラスという設計図をもとに書き換えているから、mapが正しい。
+      User.new(name)
+    end
   end
 end
 
+users = ["kai", "tarou", "take"]
 
-user = User.new("aoyama")
+users = User.create(users)
 
-# user.name = "tarou"
-puts user.name
+users.each do |user|
+  puts user.name
+end
