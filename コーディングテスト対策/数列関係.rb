@@ -1,22 +1,22 @@
 # #等差数列を作成する。
-# def tosa(num, diff, length)   #num = 初項 diff = 公差 length = 数列の長さ
-#   Array.new(length) {|n| num + diff * n}
-# end
+def tosa(num, diff, length)   #num = 初項 diff = 公差 length = 数列の長さ
+  Array.new(length) {|n| num + diff * n}
+end
 
-# p tosa(0,5,5)
-# p tosa(2,8,4)
+p tosa(0,5,5)
+p tosa(2,8,4)
 
 # #等比数列
 
-# def touhi(num, ratio, length)       #num = 初項 ratio = 公比 length = 数列の長さ
-#   Array.new(length) {|n| num * ratio**n}
-# end
+def touhi(num, ratio, length)       #num = 初項 ratio = 公比 length = 数列の長さ
+  Array.new(length) {|n| num * ratio**n}
+end
 
-# p touhi(3,12,11)
+p touhi(3,12,11)
 
-# #フィボナッチ数列
+#フィボナッチ数列
 
-# answer = 1, 1, 2, 3, 5, 8, 13, 21 , 34, 55, 89, 144, 233, 377, 610
+answer = 1, 1, 2, 3, 5, 8, 13, 21 , 34, 55, 89, 144, 233, 377, 610
 
 #手順1  一項目と二項目は例外となるので、それをまず処理する。
 
