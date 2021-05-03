@@ -53,7 +53,7 @@ class Customer
 end
 
 kai = Customer.new("kai", 40)
-momoka = Customer.new("momoka", 30)
+momoka = Customer.new("tarou", 30)
 p kai.name
 # p kai.weight
-p momoka.heavier_than?(kai)
+p tarou.heavier_than?(kai)
