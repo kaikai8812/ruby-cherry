@@ -58,3 +58,11 @@ Product.create_products("aa")
 
 # user = User.new
 # user.name
+
+input_line = gets
+# input_line.delete("-").split("").map{|n| n.to_i}
+array = input_line.chomp
+array = array.delete("-").split("").map{|n| n.to_i}.join(",")
+# p array
+array = array.gsub(/0|1|2|3|4|5|6|7|8|9/, "0" => "12", "1" => "3", "2" => "4", "3" => "5", "4" => "6", "5" => "7", "6" => "8", "7" => "9", "8" => "10", "9" => "11" )
+p array.split(",").map{|n| n.to_i}.inject(0){|sum,n| sum + n + n}
