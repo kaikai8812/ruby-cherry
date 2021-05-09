@@ -16,7 +16,3 @@ def fizz_buzz(n)
     n.to_s
   end
 end
-
-puts fizz_buzz(16)
-puts fizz_buzz(15)
-puts fizz_buzz(10)
